@@ -1,1 +1,1 @@
-web: gunicorn midannaverk:app
+web: gunicorn Vefverk4:app
