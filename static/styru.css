@@ -1,0 +1,66 @@
+﻿body {
+    background-color: #ffffff;
+    font-family: Comic Sans, Comic Sans MS, cursive;
+    margin: 0 1em 1em 1em;
+}
+
+.kurfa img {
+    height: 5em;
+    height: 5em;
+}
+/*
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: 100px;
+}
+    */
+.box, .box2 {
+    height: 101px;
+    width: 478px;
+    border: 0.75px solid;
+    border-radius: 5px;
+    text-align: center;
+}
+/*
+.box a, .goto a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: #666;
+    padding: .5em;
+    text-align: center;
+}
+*/
+.box img {
+    height: 5em;
+    height: 5em;
+}
+
+.box2 img {
+    height: 9em;
+    height: 9em;
+}
+
+.box p {
+    margin-top: .3em;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+    background-color: #cc00cc;
+}
+
+td, th {
+    border: 1px solid #ffff1a;
+    text-align: left;
+    padding: 8px;
+    width: 50%;
+}
+
+tr:nth-child(even) {
+    background-color: #ddd;
+}

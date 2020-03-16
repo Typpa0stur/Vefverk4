@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/static/styru.css" type="text/css" />
+    <title>Big Boi Beans</title>
+</head>
+<body>
+    <div class="kurfa">
+        <a href="/karfa">
+            <img src="{{ url_for("static", filename="cartss.png") }}" />
+        </a>
+        <p>Karfan þín.  {{fjoldi}} vörur í körfu.</p>
+    </div>
+    <!-- þarft að gera síðu til að posta þessu info á -->
+        <form method="POST">
+            <label for="nafn">Nafn:</label><br>
+            <input type="text" name="nafn" /><br>
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" /><br>
+            <label for="simanum">Símanúmer:</label><br>
+            <input type="text" name="simanum" /><br>
+            <input type="submit" value="Login" />
+        </form>
+
+        <h4>  </h4>
+        <main>
+            <div class="wrapper">
+                {% for i in vorur %}
+                <div class="box">
+                    <a href="/vara/{{i[0]}}">
+                        <img src="{{ url_for("static", filename=i[3]) }}">
+                    </a>
+
+                </div>
+                <p>{{i[1]}}: {{i[2]}}kr. </p>
+
+                {% endfor %}
+            </div>
+        </main>
+
+    </body>
+    </html>

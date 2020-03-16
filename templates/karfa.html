@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/static/styru.css" type="text/css" />
+    <title>Big Boi Beans Karfa</title>
+</head>
+<body>
+    <h1>YOU DID IT</h1>
+    <a href="/off">Delete all</a><br />
+    <a href="/">Home</a>
+
+    <table>
+        <caption>Karfan þín</caption>
+        <tbody>
+            <tr>
+                <th><h3>Vara</h3></th>
+                <th><h3>Verð</h3></th>
+                {% for i in vara %}
+                <!--   geta eitt úr karfa[] listanum    -->
+            <tr>
+                <td><a href="/deletus/{{vara[i]}}">{{ vorur[i][1] }} </a></td>
+                <td>{{ vorur[i][2] }} </td>
+            </tr>
+            {% endfor %}         
+            </tr>
+        </tbody>
+    </table>
+    <h4>Heildarverð: {{heildarverd}}kr.</h4>
+
+</body>
+</html>
